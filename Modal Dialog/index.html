@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal dengan Jquery</title>
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <style type="text/css">
+      body {
+        font-family: sans-serif;
+      }
+      #tombol {
+        background-color: dodgerblue;
+        color: white;
+        padding: 7px;
+        border: 1px dodgerblue;
+        border-radius: 3px;
+      }
+
+      #modal-box {
+        background-color: #f0f0f0;
+        position: absolute;
+        display: block;
+        width: 500px;
+        padding: 15px;
+        border-radius: 5px;
+        display: none;
+      }
+
+      #close-button {
+        background-color: crimson;
+        color: white;
+        padding: 5px;
+        border: 1px solid crimson;
+        float: right;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="tombol">Informasi</button>
+    <div id="modal-box">
+      <div id="close">
+        <div id="close-button">X</div>
+      </div>
+      <div id="modal">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tenetur, voluptas, odit neque nam cum debitis, quasi ut natus dolores beatae perferendis possimus culpa consectetur et praesentium! Pariatur, totam ratione.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quod quibusdam blanditiis, voluptate fugit sint. At eaque asperiores illo quidem cum molestiae iure porro dolores sequi, voluptatem beatae officia facere!
+      </div>
+    </div>
+  </body>
+</html>
